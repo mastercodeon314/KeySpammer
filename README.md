@@ -3,6 +3,7 @@ A small winforms app to demonstrate what bad things can happen when KeyDown even
 
 Demo Video:
 https://i.imgur.com/sZ3MPUc.mp4
+Please enable sound for the full experience.
 
 Features:
 - Spam volume up
