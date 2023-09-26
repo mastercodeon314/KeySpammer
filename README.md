@@ -2,7 +2,7 @@
 A small winforms app to demonstrate what bad things can happen when KeyDown events are spammed in windows.
 
 Demo video:
-![Demo video](https://imgur.com/a/UaEkK5L)
+![Demo video](https://i.imgur.com/sZ3MPUc.mp4)
 
 Features:
 - Spam volume up
