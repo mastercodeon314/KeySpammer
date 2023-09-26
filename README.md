@@ -1,10 +1,7 @@
 # KeySpammer
 A small winforms app to demonstrate what bad things can happen when KeyDown events are spammed in windows.
 
-Demo video:
-<video src='https://user-images.githubusercontent.com/78676320/91da4d77-c711-48ac-b082-c5d503564a42.mp4' width=180/>
-
-
+![Demo video](https://imgur.com/sZ3MPUc)
 
 Features:
 - Spam volume up
