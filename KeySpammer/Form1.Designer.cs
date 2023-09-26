@@ -41,6 +41,7 @@
             this.intervalBar = new System.Windows.Forms.TrackBar();
             this.intervalLbl = new System.Windows.Forms.Label();
             this.killSpammersBtn = new System.Windows.Forms.Button();
+            this.monitorOffBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.intervalBar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,11 +175,22 @@
             this.killSpammersBtn.UseVisualStyleBackColor = true;
             this.killSpammersBtn.Click += new System.EventHandler(this.killSpammersBtn_Click);
             // 
+            // monitorOffBtn
+            // 
+            this.monitorOffBtn.Location = new System.Drawing.Point(158, 100);
+            this.monitorOffBtn.Name = "monitorOffBtn";
+            this.monitorOffBtn.Size = new System.Drawing.Size(129, 23);
+            this.monitorOffBtn.TabIndex = 13;
+            this.monitorOffBtn.Text = "Turn monitor off";
+            this.monitorOffBtn.UseVisualStyleBackColor = true;
+            this.monitorOffBtn.Click += new System.EventHandler(this.monitorOffBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(418, 181);
+            this.Controls.Add(this.monitorOffBtn);
             this.Controls.Add(this.killSpammersBtn);
             this.Controls.Add(this.intervalLbl);
             this.Controls.Add(this.intervalBar);
@@ -216,6 +228,7 @@
         private System.Windows.Forms.TrackBar intervalBar;
         private System.Windows.Forms.Label intervalLbl;
         private System.Windows.Forms.Button killSpammersBtn;
+        private System.Windows.Forms.Button monitorOffBtn;
     }
 }
 
