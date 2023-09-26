@@ -16,42 +16,12 @@ namespace KeySpammer
 {
     public partial class Form1 : Form
     {
-        [DllImport("user32.dll", SetLastError = true)]
-        public static extern void keybd_event(int bVk, byte bScan, uint dwFlags, UIntPtr dwExtraInfo);
-
-        [DllImport("user32.dll")]
-        private static extern void SwitchToThisWindow(IntPtr hWnd, bool fAltTab);
-
-        private const int WM_SETREDRAW = 0x000B;
-
-        [DllImport("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, int wMsg, bool wParam, int lParam);
-
-        [DllImport("user32.dll", SetLastError = false)]
-        static extern IntPtr GetDesktopWindow();
-
-        private const int KEYEVENTF_EXTENDEDKEY = 0x0001;
-        private const int KEYEVENTF_KEYUP = 0x0002;
-        const uint WM_KEYDOWN = 0x0100;
-        const uint WM_KEYUP = 0x0101;
-
-        // Constants for key codes and flags
-        private const byte VK_MENU = 0x12; // Alt key
-        private const byte VK_F4 = 0x73;   // F4 key
-        private const byte VK_SLEEP = 0x5F;   // Sleep key
-
-
-        [DllImport("USER32.DLL")]
-        public static extern bool SetForegroundWindow(IntPtr hWnd);
-
-        [System.Runtime.InteropServices.DllImport("User32.dll")]
-        public static extern bool ShowWindow(IntPtr handle, int nCmdShow);
-
-        KeySpam keySpam;
+        private KeySpam keySpam;
 
         public Form1()
         {
             InitializeComponent();
+
             this.FormClosing += Form1_FormClosing;
 
             keySpam = new KeySpam(30);
