@@ -1,3 +1,6 @@
+## v1.1 update:
+![image](https://github.com/mastercodeon314/KeySpammer/assets/78676320/2f90547f-7c8b-4b19-8911-1bed09a616db)
+
 # KeySpammer
 A small winforms app to demonstrate what bad things can happen when KeyDown events are spammed in windows.
 
