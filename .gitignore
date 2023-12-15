@@ -396,3 +396,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/Monitors/Monitors.csproj
+/Monitors/Program.cs
+/Monitors/App.config
+/Monitors/56K Modem sound.wav
