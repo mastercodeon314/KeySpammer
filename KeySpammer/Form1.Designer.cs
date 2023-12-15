@@ -42,6 +42,12 @@
             this.intervalLbl = new System.Windows.Forms.Label();
             this.killSpammersBtn = new System.Windows.Forms.Button();
             this.monitorOffBtn = new System.Windows.Forms.Button();
+            this.moveAllWindowsBtn = new System.Windows.Forms.Button();
+            this.bombBtn = new System.Windows.Forms.Button();
+            this.monitorSpamBtn = new System.Windows.Forms.Button();
+            this.freezeAllWindowsBtn = new System.Windows.Forms.Button();
+            this.modemBombBtn = new System.Windows.Forms.Button();
+            this.bsodCrashBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.intervalBar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,9 +153,8 @@
             // 
             // intervalBar
             // 
-            this.intervalBar.Location = new System.Drawing.Point(12, 124);
+            this.intervalBar.Location = new System.Drawing.Point(11, 192);
             this.intervalBar.Maximum = 750;
-            this.intervalBar.Minimum = 1;
             this.intervalBar.Name = "intervalBar";
             this.intervalBar.Size = new System.Drawing.Size(391, 45);
             this.intervalBar.TabIndex = 10;
@@ -159,7 +164,7 @@
             // intervalLbl
             // 
             this.intervalLbl.AutoSize = true;
-            this.intervalLbl.Location = new System.Drawing.Point(13, 105);
+            this.intervalLbl.Location = new System.Drawing.Point(12, 173);
             this.intervalLbl.Name = "intervalLbl";
             this.intervalLbl.Size = new System.Drawing.Size(100, 13);
             this.intervalLbl.TabIndex = 11;
@@ -185,11 +190,77 @@
             this.monitorOffBtn.UseVisualStyleBackColor = true;
             this.monitorOffBtn.Click += new System.EventHandler(this.monitorOffBtn_Click);
             // 
+            // moveAllWindowsBtn
+            // 
+            this.moveAllWindowsBtn.Location = new System.Drawing.Point(11, 99);
+            this.moveAllWindowsBtn.Name = "moveAllWindowsBtn";
+            this.moveAllWindowsBtn.Size = new System.Drawing.Size(137, 23);
+            this.moveAllWindowsBtn.TabIndex = 14;
+            this.moveAllWindowsBtn.Text = "Move all windows";
+            this.moveAllWindowsBtn.UseVisualStyleBackColor = true;
+            this.moveAllWindowsBtn.Click += new System.EventHandler(this.moveAllWindowsBtn_Click);
+            // 
+            // bombBtn
+            // 
+            this.bombBtn.Location = new System.Drawing.Point(158, 130);
+            this.bombBtn.Name = "bombBtn";
+            this.bombBtn.Size = new System.Drawing.Size(108, 23);
+            this.bombBtn.TabIndex = 15;
+            this.bombBtn.Text = "Nedry\'s Bomb";
+            this.bombBtn.UseVisualStyleBackColor = true;
+            this.bombBtn.Click += new System.EventHandler(this.bombBtn_Click);
+            // 
+            // monitorSpamBtn
+            // 
+            this.monitorSpamBtn.Location = new System.Drawing.Point(272, 130);
+            this.monitorSpamBtn.Name = "monitorSpamBtn";
+            this.monitorSpamBtn.Size = new System.Drawing.Size(129, 23);
+            this.monitorSpamBtn.TabIndex = 16;
+            this.monitorSpamBtn.Text = "Spam monitor off";
+            this.monitorSpamBtn.UseVisualStyleBackColor = true;
+            this.monitorSpamBtn.Click += new System.EventHandler(this.monitorSpamBtn_Click);
+            // 
+            // freezeAllWindowsBtn
+            // 
+            this.freezeAllWindowsBtn.Location = new System.Drawing.Point(15, 129);
+            this.freezeAllWindowsBtn.Name = "freezeAllWindowsBtn";
+            this.freezeAllWindowsBtn.Size = new System.Drawing.Size(133, 23);
+            this.freezeAllWindowsBtn.TabIndex = 17;
+            this.freezeAllWindowsBtn.Text = "Decimate all Windows";
+            this.freezeAllWindowsBtn.UseVisualStyleBackColor = true;
+            this.freezeAllWindowsBtn.Click += new System.EventHandler(this.freezeAllWindowsBtn_Click);
+            // 
+            // modemBombBtn
+            // 
+            this.modemBombBtn.Location = new System.Drawing.Point(158, 159);
+            this.modemBombBtn.Name = "modemBombBtn";
+            this.modemBombBtn.Size = new System.Drawing.Size(108, 23);
+            this.modemBombBtn.TabIndex = 18;
+            this.modemBombBtn.Text = "Modem Bomb";
+            this.modemBombBtn.UseVisualStyleBackColor = true;
+            this.modemBombBtn.Click += new System.EventHandler(this.modemBombBtn_Click);
+            // 
+            // bsodCrashBtn
+            // 
+            this.bsodCrashBtn.Location = new System.Drawing.Point(272, 159);
+            this.bsodCrashBtn.Name = "bsodCrashBtn";
+            this.bsodCrashBtn.Size = new System.Drawing.Size(108, 23);
+            this.bsodCrashBtn.TabIndex = 19;
+            this.bsodCrashBtn.Text = "BSOD Crash";
+            this.bsodCrashBtn.UseVisualStyleBackColor = true;
+            this.bsodCrashBtn.Click += new System.EventHandler(this.bsodCrashBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 181);
+            this.ClientSize = new System.Drawing.Size(418, 255);
+            this.Controls.Add(this.bsodCrashBtn);
+            this.Controls.Add(this.modemBombBtn);
+            this.Controls.Add(this.freezeAllWindowsBtn);
+            this.Controls.Add(this.monitorSpamBtn);
+            this.Controls.Add(this.bombBtn);
+            this.Controls.Add(this.moveAllWindowsBtn);
             this.Controls.Add(this.monitorOffBtn);
             this.Controls.Add(this.killSpammersBtn);
             this.Controls.Add(this.intervalLbl);
@@ -229,6 +300,12 @@
         private System.Windows.Forms.Label intervalLbl;
         private System.Windows.Forms.Button killSpammersBtn;
         private System.Windows.Forms.Button monitorOffBtn;
+        private System.Windows.Forms.Button moveAllWindowsBtn;
+        private System.Windows.Forms.Button bombBtn;
+        private System.Windows.Forms.Button monitorSpamBtn;
+        private System.Windows.Forms.Button freezeAllWindowsBtn;
+        private System.Windows.Forms.Button modemBombBtn;
+        private System.Windows.Forms.Button bsodCrashBtn;
     }
 }
 

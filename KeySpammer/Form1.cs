@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -16,9 +17,9 @@ namespace KeySpammer
 
             this.FormClosing += Form1_FormClosing;
 
-            keySpam = new KeySpam(30);
+            keySpam = new KeySpam(1);
 
-            intervalBar.Value = 30;
+            intervalBar.Value = 1;
 
             updateInterval();
         }
@@ -119,6 +120,36 @@ namespace KeySpammer
         private void monitorOffBtn_Click(object sender, EventArgs e)
         {
             MonitorHelper.TurnOff();
+        }
+
+        private void moveAllWindowsBtn_Click(object sender, EventArgs e)
+        {
+            keySpam.SpamWindowsLocation();
+        }
+
+        private void bombBtn_Click(object sender, EventArgs e)
+        {
+            keySpam.NedryBomb();
+        }
+
+        private void monitorSpamBtn_Click(object sender, EventArgs e)
+        {
+            keySpam.SpamMonitorOff();
+        }
+
+        private void freezeAllWindowsBtn_Click(object sender, EventArgs e)
+        {
+            keySpam.SpamDecimateAllWindows();
+        }
+
+        private void modemBombBtn_Click(object sender, EventArgs e)
+        {
+            keySpam.ModemBomb();
+        }
+
+        private void bsodCrashBtn_Click(object sender, EventArgs e)
+        {
+            SystemCrasher.Crash();
         }
     }
 }
