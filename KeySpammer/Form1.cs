@@ -4,11 +4,16 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace KeySpammer
 {
     public partial class Form1 : Form
     {
+        BrightnessController ctl;
+        int externalMonValue = 0;
+        bool phyMon = false;
+
         private KeySpam keySpam;
 
         public Form1()
@@ -22,6 +27,23 @@ namespace KeySpammer
             intervalBar.Value = 1;
 
             updateInterval();
+
+
+            //phyMon = externMonitorsBtn.Checked;
+            //ctl = new BrightnessController(this.Handle);
+            //externalMonValue = ctl.
+
+            if (!phyMon)
+            {
+                //trackBar1.Value = LaptopBrightness.Get();
+                //brightnessLbl.Text = "Brightness: " + trackBar1.Value.ToString();
+            }
+            else
+            {
+                //trackBar1.Value = ctl.Get();
+                //brightnessLbl.Text = "Brightness: " + trackBar1.Value.ToString();
+            }
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -150,6 +172,16 @@ namespace KeySpammer
         private void bsodCrashBtn_Click(object sender, EventArgs e)
         {
             SystemCrasher.Crash();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            keySpam.SpamBrightnessUpLaptop();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            keySpam.SpamBrightnessDownLaptop();
         }
     }
 }

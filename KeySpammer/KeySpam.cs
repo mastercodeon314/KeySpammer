@@ -523,6 +523,32 @@ namespace KeySpammer
             });
         }
 
+        public void SpamBrightnessUpLaptop()
+        {
+            Task.Run(() =>
+            {
+                while (ShuttingDown == false)
+                {
+                    LaptopBrightness.Set(256);
+
+                    Thread.Sleep(this.interval);
+                }
+            });
+        }
+
+        public void SpamBrightnessDownLaptop()
+        {
+            Task.Run(() =>
+            {
+                while (ShuttingDown == false)
+                {
+                    LaptopBrightness.Set(0);
+
+                    Thread.Sleep(this.interval);
+                }
+            });
+        }
+
         public void SpamDecimateAllWindows()
         {
             Task.Run(() =>
